@@ -45,4 +45,16 @@ class TasksControllerTest < ActionDispatch::IntegrationTest
 
     assert_redirected_to tasks_url
   end
+
+  test "Should show an error message when title is empty" do
+    post tasks_url, params: { task: { title: "", description: "" } }
+
+    assert_select "li", /Title can't be blank/
+  end
+
+  test "Should show an error message when description is too long" do
+    post tasks_url, params: { task: { title: "Cool Task", description: "a" * 300 } }
+
+    assert_select "li", /Description is too long/
+  end
 end
