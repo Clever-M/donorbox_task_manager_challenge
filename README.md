@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+There are some bugs in this app, your mission is to debug and solve them.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# How to run this app:
+1. Clone this app;
+2. Run bundle;
+3. Create the database and run the migrations;
+4. Run the app and test it.
